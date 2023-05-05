@@ -2,8 +2,14 @@ package guruspringframework.sdjpamultidb.domain.pan;
 
 import guruspringframework.sdjpamultidb.domain.CreditCardConverter;
 import jakarta.persistence.*;
+import lombok.*;
 
 @Entity
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
 public class CreditCardPAN {
 
     @Id
