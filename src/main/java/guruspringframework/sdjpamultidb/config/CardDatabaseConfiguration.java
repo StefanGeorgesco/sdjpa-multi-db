@@ -49,6 +49,8 @@ public class CardDatabaseConfiguration {
         props.put("hibernate.hbm2ddl.auto", "validate");
         props.put("hibernate.physical_naming_strategy",
                 "org.hibernate.boot.model.naming.CamelCaseToUnderscoresNamingStrategy");
+        props.put("hibernate.show_sql", "true");
+        props.put("hibernate.format_sql", "true");
 
         LocalContainerEntityManagerFactoryBean entityManagerFactoryBean = builder.dataSource(cardDataSource)
                 .packages(CreditCard.class)
